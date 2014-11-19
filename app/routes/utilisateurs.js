@@ -1,7 +1,9 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
+var UtilisateursRoute = Ember.Route.extend({
   model: function() {
-    return this.store.find('utilisateurs');
+    return this.store.find('utilisateur');
   }
 });
+
+export default UtilisateursRoute;
