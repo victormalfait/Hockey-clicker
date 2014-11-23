@@ -1,7 +1,26 @@
 {{outlet}}
+<div class="row">
+  <div class="col-md-3">
+    <h3>Click click !!!</h3>
+    <a href="#"><img src="img/palet.jpg" width=100  {{action addPoint}} /></a>
+  </div>
+  <div class="col-md-6">
 
- {{#each model}}
-  {{login}}
- {{/each}}
-
- <a href="#"><img src="img/palet.jpg" width=100  {{action addPoint}} /></a>
+  </div>
+  <div class="col-md-3">
+    <h3>Classement</h3>
+    <table class="table table-striped">
+      <tr>
+        <th>Login</th>
+        <th>Score</th>
+      </tr>
+      {{#each utilisateurs}}
+        <tr>
+          <td>{{login}}</td>
+          <td>{{points}}</td>
+        </tr>
+      {{/each}}
+    </table>
+  </div>
+  </div>
+</div>

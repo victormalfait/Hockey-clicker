@@ -16,7 +16,7 @@ export default Ember.ArrayController.extend({
 
       // Save the new model
       utilisateur.save();
-      this.transitionToRoute('game');
+      this.transitionToRoute('game',utilisateur.id);
     }
   }
 });
