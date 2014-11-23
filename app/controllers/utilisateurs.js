@@ -10,7 +10,8 @@ export default Ember.ArrayController.extend({
 
       var utilisateur = this.store.createRecord('utilisateur', {
         login: login,
-        email: email
+        email: email,
+        points: 0
       });
 
       // Save the new model
