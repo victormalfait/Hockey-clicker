@@ -8,7 +8,7 @@
         <th>Email</th>
         <th>Score</th>
       </tr>
-      {{#each model}}
+      {{#each user}}
         <tr>
           <td>{{login}}</td>
           <td>{{email}}</td>
@@ -28,7 +28,7 @@
         <label for="email">Email</label>
         {{input type="text" class="form-control" id="email" value=email}}
       </div>
-      <button {{action 'creerUtilisateur'}} class="btn btn-primary btn-lg btn-block">Ajouter</button>
+      <button {{action 'newUser'}} class="btn btn-primary btn-lg btn-block">Ajouter</button>
     </form>
   </div>
 </div>
